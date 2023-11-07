@@ -30,7 +30,9 @@ public class DBManager {
         dataSource.setUser("root");
         dataSource.setPassword(null);
         this.dataSource = dataSource;
+
     }
+
 
     public static synchronized DBManager getInstance() throws SQLException {
         if(instance == null) {
